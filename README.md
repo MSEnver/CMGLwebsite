@@ -29,3 +29,10 @@ The shared contact form posts to `/api/contact.php`, which sends enquiries to `i
 Replace illustrative stock images with approved/licensed project photography. Review all copy, project claims, contact details, privacy notice, and SEO metadata before publishing.
 
 All pages use shared styles and JavaScript from `/assets/`.
+
+## NFC digital business card
+- Public profile URL: `https://cmgl-x.com/card/`
+- Contact download: `https://cmgl-x.com/card/muhammad-saleem.vcf`
+- Program the NFC tag with the profile URL (not the VCF URL), so it opens the mobile-friendly contact page on iPhone and Android.
+- The visitor taps **Save Contact to Phone** to import the vCard.
+- Deploy both `card/index.html` and `card/muhammad-saleem.vcf` to the matching `public_html/card/` directory. Test the page and vCard download on both iOS and Android before encoding a batch of NFC cards.
