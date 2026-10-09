@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Saleem;Muhammad;;;
+FN:Muhammad Saleem
+ORG:Coopers & McGill (CMGL)
+TEL;TYPE=CELL,VOICE:+923005013438
+EMAIL;TYPE=INTERNET,WORK:mehmet.selim@cmgl-x.com
+ADR;TYPE=WORK:;;2nd Floor, Plaza B42, Sector F, DHA Phase 1;Islamabad;;;Pakistan
+URL:https://cmgl-x.com/
+END:VCARD
