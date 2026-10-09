@@ -36,3 +36,10 @@ All pages use shared styles and JavaScript from `/assets/`.
 - Program the NFC tag with the profile URL (not the VCF URL), so it opens the mobile-friendly contact page on iPhone and Android.
 - The visitor taps **Save Contact to Phone** to import the vCard.
 - Deploy both `card/index.html` and `card/muhammad-saleem.vcf` to the matching `public_html/card/` directory. Test the page and vCard download on both iOS and Android before encoding a batch of NFC cards.
+
+
+### Muhammad Waseem NFC card
+- Public profile URL: `https://cmgl-x.com/card/muhammad-waseem/`
+- Contact file: `https://cmgl-x.com/card/muhammad-waseem.vcf`
+- Upload `card/muhammad-waseem/index.html` to `public_html/card/muhammad-waseem/index.html` and `card/muhammad-waseem.vcf` to `public_html/card/muhammad-waseem.vcf`.
+- Encode the NFC tag with the profile URL, then test the page and contact import on iPhone and Android.
