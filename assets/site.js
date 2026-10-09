@@ -52,6 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const submitButton = form.querySelector('button[type="submit"]');
   const status = form.querySelector('.form-status');
+  const privacyNote = form.querySelector('.privacy-note');
+  submitButton.textContent = 'Send enquiry ↗';
+  if (privacyNote) privacyNote.textContent = 'Your enquiry will be sent to info@cmgl-x.com.';
 
   form.addEventListener('submit', async e => {
     e.preventDefault();
