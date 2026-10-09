@@ -25,7 +25,7 @@
     .details{display:grid;gap:16px}.detail{display:grid;grid-template-columns:36px minmax(0,1fr);gap:12px;align-items:center}.ico{height:34px;width:34px;border-radius:10px;background:#edf5fc;color:var(--blue);display:grid;place-items:center;font-size:16px;font-weight:700}
     .detail-label{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:2px}.detail a,.detail address{font-size:14px;text-decoration:none;overflow-wrap:anywhere}.detail a:hover{color:var(--blue)}address{font-style:normal}
     .actions{display:grid;gap:10px;margin-top:27px}.button{display:flex;justify-content:center;align-items:center;gap:9px;min-height:49px;padding:13px 16px;border-radius:10px;text-decoration:none;font-size:14px;font-weight:700;border:1px solid var(--blue);background:var(--blue);color:white;transition:background .15s ease}.button:hover{background:#10568f}.button.secondary{background:#fff;color:var(--navy);border-color:var(--line)}.button.secondary:hover{background:var(--pale)}
-    .note{text-align:center;font-size:12px;color:var(--muted);margin:16px 0 0;line-height:1.5}.footer{text-align:center;font-size:12px;color:var(--muted);padding:18px 0 0}.footer a{color:var(--blue);text-decoration:none;font-weight:700}
+    .note{text-align:center;font-size:12px;color:var(--muted);margin:16px 0 0;line-height:1.5}.qr-section{border-top:1px solid var(--line);margin-top:24px;padding-top:22px;text-align:center}.qr-title{font-size:13px;font-weight:700;color:var(--navy);margin:0 0 5px}.qr-help{font-size:12px;color:var(--muted);margin:0 0 12px}.qr-code{display:inline-flex;align-items:center;justify-content:center;padding:10px;background:#fff;border:1px solid var(--line);border-radius:12px;min-width:160px;min-height:160px}.qr-code img,.qr-code canvas{display:block;max-width:100%;height:auto}.footer{text-align:center;font-size:12px;color:var(--muted);padding:18px 0 0}.footer a{color:var(--blue);text-decoration:none;font-weight:700}
     @media(max-width:420px){.page{width:min(100% - 20px,520px);margin:12px auto}.cover{padding:24px}.content{padding:24px}.brand{font-size:29px}h1{font-size:27px}}
   </style>
 </head>
@@ -51,10 +51,13 @@
           <a class="button" href="/cards/waseem/contact.vcf" download="Muhammad-Waseem-CMGL.vcf">＋ Save Contact to Phone</a>
           <a class="button secondary" href="https://cmgl-x.com/">Visit CMGL Website ↗</a>
         </div>
+        <section class="qr-section" aria-label="QR code for this contact page"><p class="qr-title">Scan to open this digital card</p><p class="qr-help">Open this page on another phone using the camera.</p><div class="qr-code" id="contact-qr" role="img" aria-label="QR code linking to https://cmgl-x.com/cards/waseem/"></div><noscript><p class="qr-help">QR code requires JavaScript. Use this URL: https://cmgl-x.com/cards/waseem/</p></noscript></section>
         <p class="note">Tap “Save Contact to Phone” on iPhone or Android, then follow the contact import prompt.</p>
       </section>
     </article>
     <footer class="footer">Coopers &amp; McGill · <a href="https://cmgl-x.com/">cmgl-x.com</a></footer>
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>document.addEventListener("DOMContentLoaded",function(){var el=document.getElementById("contact-qr");if(el&&window.QRCode){new QRCode(el,{text:"https://cmgl-x.com/cards/waseem/",width:160,height:160,colorDark:"#112b4b",colorLight:"#ffffff",correctLevel:QRCode.CorrectLevel.M});}else if(el){el.textContent="QR code could not load. Please use the NFC link.";}});</script>
 </body>
 </html>
