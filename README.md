@@ -30,16 +30,10 @@ Replace illustrative stock images with approved/licensed project photography. Re
 
 All pages use shared styles and JavaScript from `/assets/`.
 
-## NFC digital business card
-- Public profile URL: `https://cmgl-x.com/card/`
-- Contact download: `https://cmgl-x.com/card/muhammad-saleem.vcf`
-- Program the NFC tag with the profile URL (not the VCF URL), so it opens the mobile-friendly contact page on iPhone and Android.
-- The visitor taps **Save Contact to Phone** to import the vCard.
-- Deploy both `card/index.html` and `card/muhammad-saleem.vcf` to the matching `public_html/card/` directory. Test the page and vCard download on both iOS and Android before encoding a batch of NFC cards.
-
-
-### Muhammad Waseem NFC card
-- Public profile URL: `https://cmgl-x.com/card/muhammad-waseem/`
-- Contact file: `https://cmgl-x.com/card/muhammad-waseem.vcf`
-- Upload `card/muhammad-waseem/index.html` to `public_html/card/muhammad-waseem/index.html` and `card/muhammad-waseem.vcf` to `public_html/card/muhammad-waseem.vcf`.
-- Encode the NFC tag with the profile URL, then test the page and contact import on iPhone and Android.
+## NFC digital business cards
+- Muhammad Saleem profile: `https://cmgl-x.com/cards/saleem/`
+- Muhammad Saleem vCard: `https://cmgl-x.com/cards/saleem/contact.vcf`
+- Muhammad Waseem profile: `https://cmgl-x.com/cards/waseem/`
+- Muhammad Waseem vCard: `https://cmgl-x.com/cards/waseem/contact.vcf`
+- Deploy the `cards/` directory to `public_html/cards/`. Each person's folder contains `index.html` and `contact.vcf`.
+- Program each NFC tag with the profile URL, not the vCard URL. Test the profile and contact import on iPhone and Android before encoding cards.
