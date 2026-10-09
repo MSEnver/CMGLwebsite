@@ -4,7 +4,7 @@ declare(strict_types=1);
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store, max-age=0');
 
-function respond(int $status, array $payload): never {
+function respond(int $status, array $payload): void {
     http_response_code($status);
     echo json_encode($payload, JSON_UNESCAPED_SLASHES);
     exit;
